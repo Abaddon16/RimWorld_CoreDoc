@@ -7,8 +7,9 @@
 
 # Blacklist everything, so nothing weird gets through
 *
-# Allow subdirectories, required to be able to walk down into other sub-directories
+# Allow subdirectories, recursively
 !*/
+!*/**/
 
 #Types of files I intend to comment
 # Codebase/*/*Utility*.cs
@@ -33,8 +34,10 @@
 !.editorconfig
 !README.md
 
-# Files in progress
 
+# Files in progress
+!Codebase/RimWorld/AgeInjuryUtility.cs
 
 # Finished Files
+!Codebase/RimWorld/AddictionUtility.cs
 
