@@ -36,8 +36,11 @@
 
 
 # Files in progress
-!Codebase/RimWorld/AgeInjuryUtility.cs
+!Codebase/RimWorld/Alert.cs
 
 # Finished Files
 !Codebase/RimWorld/AddictionUtility.cs
-
+!Codebase/RimWorld/AgeInjuryUtility.cs
+!Codebase/RimWorld/Alert_AwaitingMedicalOperation.cs
+!Codebase/RimWorld/Alert_BilliardsTableOnWall.cs
+!Codebase/RimWorld/Alert_Boredom.cs

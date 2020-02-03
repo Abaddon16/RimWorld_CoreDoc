@@ -55,7 +55,7 @@ namespace RimWorld {
         /// </summary>
         /// <param name="pawn"></param>
         /// <param name="chemical"></param>
-        /// <returns></returns>
+        /// <returns>Returns the <see cref="Hediff_Addiction"/> the <see cref="Pawn"/> has</returns>
         public static Hediff_Addiction FindAddictionHediff(Pawn pawn, ChemicalDef chemical) {
             return (Hediff_Addiction) pawn.health.hediffSet.hediffs.Find((Hediff x) => x.def == chemical.addictionHediff);
         }

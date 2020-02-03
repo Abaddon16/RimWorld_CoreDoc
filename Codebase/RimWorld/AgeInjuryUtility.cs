@@ -17,7 +17,7 @@ namespace RimWorld {
 		private static List<Thing> emptyIngredientsList = new List<Thing>();
 		/// <summary>
 		///		<para>Returns a random <see cref="Hediff"/> for the given <see cref="Pawn"/></para>
-		/// 	<para>Calls <see cref="RandomHediffsToGainOnBirthday(ThingDef raceDef, int age)" /></para>
+		/// 	<para>Calls <see cref="RandomHediffsToGainOnBirthday(ThingDef, int)" /></para>
 		/// </summary>
 		/// <param name="pawn"></param>
 		/// <param name="age">Integer age of the <see cref="Pawn"/> in question</param>
@@ -30,7 +30,7 @@ namespace RimWorld {
 		/// </summary>
 		/// <param name="raceDef"><see cref="ThingDef"/> to get a set of <see cref="Hediff"/>s for</param>
 		/// <param name="age">Integer age of the <see cref="Thing"/> in question</param>
-		/// <returns></returns>
+		/// <returns>An <see cref="IEnumerable{T}"/> list of the <see cref="Hediff"/>s to be given</returns>
 		[DebuggerHidden]
 		private static IEnumerable<HediffGiver_Birthday> RandomHediffsToGainOnBirthday(ThingDef raceDef, int age) {
 			List<HediffGiverSetDef> sets = raceDef.race.hediffGiverSets;
@@ -109,7 +109,11 @@ namespace RimWorld {
 				}
 			}
 		}
-
+		/// <summary>
+		///		<para>Returns a random injury of <see cref="DamageDefOf"/> type; can include <see cref="DamageDefOf.Frostbite"/> or not</para>
+		/// </summary>
+		/// <param name="allowFrostbite"></param>
+		/// <returns>The <see cref="DamageDef"/> randomly selected</returns>
 		private static DamageDef RandomPermanentInjuryDamageType(bool allowFrostbite) {
 			switch (Rand.RangeInclusive(0, 3 + ((!allowFrostbite) ? 0 : 1))) {
 				case 0:
@@ -126,7 +130,11 @@ namespace RimWorld {
 					throw new Exception();
 			}
 		}
-
+		/// <summary>
+		///		<para>Generates a list of age-related injuries</para>
+		///		<para>Prints a list of theoretical injuries (given 1000 iterations, but no duplicates)</para>
+		///		<para>Prints a list of the actual injuries, based on only gaining one injury per year after 40 years old</para>
+		/// </summary>
 		[DebugOutput]
 		public static void PermanentInjuryCalculations() {
 			StringBuilder stringBuilder = new StringBuilder();
