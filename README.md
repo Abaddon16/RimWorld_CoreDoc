@@ -1,9 +1,10 @@
 # RimWorld_CoreDoc
 
-This is an attempt to document the Core codebase of RimWorld. It's insanity, I know. Just roll with me here.
+This is an attempt to document the Core codebase of RimWorld. It's insanity, I know. Just roll with me here. This decompliation is from 2018, so it may be way out of date. I don't even remember how I got the files anymore. Feel free to remind me, should you see something out of date.
 
 ## Authority
-I emailed Tynan directly and he responded that he believes the purpose of this repo to be a good objective. Any who want proof, I can send the email to you, provided you give me your email address.  
+
+I emailed Tynan directly and he responded that he believes the purpose of this repo to be a good objective. Any who want proof, I can send the email to you, provided you give me your email address.
 
 I am working on a GitHub pages solution to providing this proof. Additionally, I am working on a .gitignore solution that meets the intent. Once I find it, I will be recreating this repo so it meets the intent.
 
@@ -23,22 +24,22 @@ gamers out there that haven't taken up the mantle of "Modder" because they see C
 The current folder structure is simple. One folder, /Codebase. It holds the decompiled source code of the Assembly-CSharp.dll. In these files I have the XML documentation comments.
 In the future I look to move on to having an /XML folder to house the constructed XML files. There will also be a /HTML folder in the future when it's completed.
 
-The code in [Thing.cs](/Codebase/Verse/Thing.cs) probably looks different than you're used to. My Visual Studios settings are such that all extraneous newlines and spaces are removed.
-Newlines after namespace, class, function, method, object, etc. are set to be removed. I'd like to keep it this way, if possible, simply because it shortens file lengths by hundreds of lines.
-[Thing.cs](/Codebase/Verse/Thing.cs) was reduced by 30% by this alone.
+The code in these files probably looks different than you're used to. My VSCode settings are such that all extraneous newlines and spaces are removed.
+Newlines after namespace, class, function, method, object, etc. are set to be removed. It will be kept this way, simply because it shortens file lengths by hundreds of lines.
+[Thing.cs](/Codebase/Verse/Thing.cs) was reduced by 30% by this alone (before I got Tynan's copy).
+
+I'm not sure how this repo will be used, currently. I'm thinking have it open at the same time, but I'm not sure. If anyone figures it out, let me know. If nothing else, I'll have the comments made, and then some sort of webpage to search through, that people can look at.
 
 ## Contribute
 
-I need help. This is a massive undertaking for the community, and I cannot go it alone. I need all the help I can get. My idea is that people would take a single file and comment it
-and do a pull request when completed. We need need need to be uniform in this endeavor. We have to or it will die before it's born. Send me a message on the RimWorld Discord if you want to help -
-my handle is @abaddon16#7120
+This is a massive undertaking for the community, and I cannot go it alone. I need all the help I can get. My idea is that people would take a single file and comment it
+and do a pull request when completed. We need need need to be uniform in this endeavor. We have to or it will die before it's born. Send me a message on the RimWorld Discord if you want to help - my handle is @abaddon16#7120
 
-As this is simply an attempt to do the documentation for the codebase, there will be no actual coding going on. However, you _will_ need to be able to suss out what the code _means_ so you
-can properly document the files. Knowing what each function/method/parameter does vice how to use it is the key difference.
+As this is simply an attempt to do the documentation for the codebase, there will be no actual coding going on. However, you _will_ need to be able to suss out what the code _means_ so you can properly document the files. Knowing what each function/method/parameter does vice how to use it is the key difference.
 
 ### XML Comments
 
-Look at [Thing.cs](/Codebase/Verse/Thing.cs) and follow that. It's a merge of what Tynan wrote, and the formatting I've done. It's a huge file, it has plenty of examples. If you run into something you're not sure how to handle, ask.
+Look at [AddictionUtility.cs](/Codebase/RimWorld/AddictionUtility_Commented.cs) and follow that. It's a merge of what Tynan wrote, and the formatting I've done. It's a huge file, it has plenty of examples. If you run into something you're not sure how to handle, ask.
 If I'm not around to answer, take the spirit and obvious intent of the other files I've validated and apply that for the time being. Reengage with me once I'm back.
 
 The intent of these comments is two-fold.

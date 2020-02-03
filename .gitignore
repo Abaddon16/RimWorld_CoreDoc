@@ -1,0 +1,40 @@
+# this will basically have to be a whitelist .gitignore to maintain compliance
+# with Tynan's wishes. It will be a smidge difficult until I get a hang of it
+
+*.sln
+*.csproj
+.vs
+
+# Blacklist everything, so nothing weird gets through
+*
+# Allow subdirectories, required to be able to walk down into other sub-directories
+!*/
+
+#Types of files I intend to comment
+# Codebase/*/*Utility*.cs
+# Codebase/*/*Incident*.cs
+# Codebase/*/*Storyteller*.cs
+# Codebase/*/*Comp*.cs
+# Codebase/*/MapPawns.cs
+# Codebase/*/Map*.cs
+# Codebase/*/*Verb*.cs
+# Codebase/*/Thing.cs
+# Codebase/*/ThingDef*.cs
+# Codebase/*/*Hediff*.cs
+# Codebase/*/HediffDef*.cs
+# Codebase/*/Find.cs
+
+# May need to whitelist the CSProject, so that everyone can use this w/ Intellisense, because it doesn't work without this
+# !Assembly-CSharp.csproj
+
+# Whitelist random files
+!docs/*
+!.gitignore
+!.editorconfig
+!README.md
+
+# Files in progress
+
+
+# Finished Files
+
