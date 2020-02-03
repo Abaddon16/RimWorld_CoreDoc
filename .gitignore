@@ -7,7 +7,7 @@
 
 # Blacklist everything, so nothing weird gets through
 *
-# Allow subdirectories, recursively
+# Allow subdirectories, then allow them recursively
 !*/
 !*/**/
 
@@ -44,3 +44,5 @@
 !Codebase/RimWorld/Alert_AwaitingMedicalOperation.cs
 !Codebase/RimWorld/Alert_BilliardsTableOnWall.cs
 !Codebase/RimWorld/Alert_Boredom.cs
+!Codebase/RimWorld/Alert_BrawlerHasRangedWeapon.cs
+!Codebase/RimWorld/Alert_ColonistNeedsRescuing.cs
