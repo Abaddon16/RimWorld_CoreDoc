@@ -37,6 +37,7 @@
 
 # Files in progress
 !Codebase/RimWorld/Alert.cs
+!Codebase/RimWorld/Alert_Critical.cs
 
 # Finished Files
 !Codebase/RimWorld/AddictionUtility.cs
@@ -46,3 +47,7 @@
 !Codebase/RimWorld/Alert_Boredom.cs
 !Codebase/RimWorld/Alert_BrawlerHasRangedWeapon.cs
 !Codebase/RimWorld/Alert_ColonistNeedsRescuing.cs
+!Codebase/RimWorld/Alert_ColonistNeedsTend.cs
+!Codebase/RimWorld/Alert_ColonistsIdle.cs
+!Codebase/RimWorld/Alert_Exhaustion.cs
+!Codebase/RimWorld/Alert_FireInHomeArea.cs

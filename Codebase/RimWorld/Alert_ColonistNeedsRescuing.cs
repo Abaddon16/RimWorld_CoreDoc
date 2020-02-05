@@ -7,7 +7,7 @@ using Verse;
 namespace RimWorld {
 	/// <summary>
 	///		<para>Exposes <see cref="Alert"/>-related functions specific to Player-faction <see cref="Pawn"/>s needing rescue</para>
-	///		<para>Subclass of <see cref="Alert"/></para>
+	///		<para>Subclass of <see cref="Alert_Critical"/></para>
 	/// </summary>
 	public class Alert_ColonistNeedsRescuing : Alert_Critical {
 		/// <summary>
