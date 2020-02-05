@@ -32,10 +32,16 @@ I'm not sure how this repo will be used, currently. I'm thinking have it open at
 
 ## Contribute
 
-This is a massive undertaking for the community, and I cannot go it alone. I need all the help I can get. My idea is that people would take a single file and comment it
-and do a pull request when completed. We need need need to be uniform in this endeavor. We have to or it will die before it's born. Send me a message on the RimWorld Discord if you want to help - my handle is @abaddon16#7120
+To help, follow the steps at [this site](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/). Prior to any help, check the current PRs for the files you want to alter, to reduce any duplicated work.
 
-As this is simply an attempt to do the documentation for the codebase, there will be no actual coding going on. However, you _will_ need to be able to suss out what the code _means_ so you can properly document the files. Knowing what each function/method/parameter does vice how to use it is the key difference.
+Summary:
+
+- Fork & clone locally
+- Create an upstream remote and sync your local copy before you branch
+- Branch for each separate piece of work (try and do small chunks for the sake of simpler PRs)
+- Do the work, write good commit messages (list altered files)
+- Push to **your** origin (remote/on GitHub) repo
+- Create a new PR on GitHub (descriptive PR notes)
 
 ### XML Comments
 
